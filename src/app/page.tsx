@@ -6,7 +6,7 @@ import { ShopBox } from '@/components/shop-box'
 import { VideoCarousel } from '@/components/video-carousel'
 import { OfficeSyndromeCarousel } from '@/components/office-syndrome-carousel'
 import { Footer } from '@/components/footer'
-
+import ImageGallery from '@/components/image-gallery'
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
       <VideoCarousel />
       <KnowledgeBox />
       <ShopBox />
+      <ImageGallery />
       <Footer />
     </Layout>
   )
