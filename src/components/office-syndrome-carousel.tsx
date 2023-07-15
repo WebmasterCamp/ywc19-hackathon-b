@@ -13,7 +13,7 @@ export function OfficeSyndromeCarousel() {
       {
         id: 'item-1',
         renderItem: (
-            <div className='office-syndrome-information text-center'>
+            <div className='text-center'>
                 <Image className='flex m-auto' src="/sample.png" alt="Office Syndrome 1" width={300} height={200} />
                 <h1 className=' text-[#3e3e6b] font-bold mt-[25px]'>Lorem Ipsum is simply dummy </h1>
                 <p className='font-semibold text-[12px] mt-[5px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quia nemo ipsam eius, impedit ea officiis, adipisci distinctio quos numquam odio aliquam vel. Perferendis doloribus omnis eaque quis, commodi similique.</p>
@@ -26,7 +26,7 @@ export function OfficeSyndromeCarousel() {
       {
         id: 'item-2',
         renderItem: (
-            <div className='office-syndrome-information text-center'>
+            <div className='text-center'>
                 <Image className='flex m-auto' src="/sample.png" alt="Office Syndrome 1" width={300} height={200} />
                 <h1 className=' text-[#3e3e6b] font-bold mt-[25px]'>Lorem Ipsum is simply dumsdsdsdmy </h1>
                 <p className='font-semibold text-[12px] mt-[5px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quia nemo ipsam eius, impedit ea officiis, adipisci distinctio quos numquam odio aliquam vel. Perferendis doloribus omnis eaque quis, commodi similique.</p>

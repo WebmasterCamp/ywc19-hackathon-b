@@ -8,6 +8,16 @@ body {
   font-family: "Bai Jamjuree", sans-serif;
 }
 
+h3 {
+  color: #000;
+  text-align: center;
+  font-family: Bai Jamjuree;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .carousel-bullet {
   fill: #7d9ed3;
   cursor: pointer;
@@ -34,8 +44,8 @@ body {
   justify-content: center;
 }
 
-.btn-primary.refresh{
-    width : 45px;
+.btn-primary.refresh {
+  width: 45px;
 }
 
 .btn-primary:hover {
