@@ -45,8 +45,10 @@ export const ShopBox = () => {
           isExpanded && [1, 2, 3].map((item, index) => (
             <div className={clsx("flex justify-between items-center p-5", index % 2 == 0 && "bg-primary-mid-emp bg-opacity-50")}>
               <div>
-                <p>โปรแกรมกายภาพบำบัด
-                  รักษาอาการแก้ปวดหลัง</p>
+                <p>
+                  โปรแกรมกายภาพบำบัด
+                  รักษาอาการแก้ปวดหลัง
+                </p>
                 <div className="flex items-center gap-2">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 4V6.5M10.375 6.625C10.375 9.04 8.415 11 6 11C3.585 11 1.625 9.04 1.625 6.625C1.625 4.21 3.585 2.25 6 2.25C8.415 2.25 10.375 4.21 10.375 6.625Z" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" />
