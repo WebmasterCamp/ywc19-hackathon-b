@@ -1,4 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.carousel-bullet {
+  fill: #7d9ed3;
+  cursor: pointer;
+}
+
+.carousel-bullet:hover {
+  fill: #3e3e6b;
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel-bullet:active {
+  fill: #7d9ed3;
+}
+
+.btn-primary {
+  display: flex;
+  color: white;
+  border-radius: 8px;
+  background: #3e3e6b;
+  box-shadow: 0px 4px 12px 4px rgba(62, 62, 107, 0.3);
+  height: 40px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary.refresh{
+    width : 45px;
+}
+
+.btn-primary:hover {
+  background: #7d9ed3;
+  transition: all 0.3s ease-in-out;
+}
