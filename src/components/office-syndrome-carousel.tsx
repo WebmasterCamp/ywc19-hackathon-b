@@ -1,17 +1,7 @@
 import { useSpringCarousel } from 'react-spring-carousel'
 import Image from 'next/image'
-import { useState } from 'react'
-import { Layout } from '@/components/layout'
-import { Share } from 'react-feather';
-
 
 export function OfficeSyndromeCarousel() {
-
-    const [active, setActive] = useState('#7D9ED3')
-
-    const handleActive = () => {
-        setActive('#3333')
-    }
 
     const { 
         carouselFragment, 
