@@ -37,10 +37,10 @@ export default function ImageGallery() {
           <img src='/assets/products/paolo.avif' alt='palo' style={contentStyle} />
         </div>
         <div className="">
-          <img src='/assets/products/cover-2.avif' alt='palo' style={contentStyle}/>
+          <img src='/assets/products/cover-2.avif' alt='palo' style={contentStyle} />
         </div>
         <div className="">
-          <img src='/assets/products/cover-3.avif' alt='palo' style={contentStyle}/>
+          <img src='/assets/products/cover-3.avif' alt='palo' style={contentStyle} />
         </div>
       </Carousel>
       <div className="flex text-primary max-w-3xl mx-auto items-center pl-[22px] mt-[30px]">
@@ -55,7 +55,8 @@ export default function ImageGallery() {
       </div>
       <div className="pl-[22px] pr-[22px] max-w-3xl mx-auto">
         <p>
-          Lorem Ipsum is simply dummy text of the.Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the
+          ทีมแพทย์เวชศาสตร์ฟื้นฟูและนักกายภาพบำบัด เฉพาะทาง
+          ด้านโรคข้อ กระดูก และกล้ามเนื้อ ให้บริการครบวงจร ทั้งการตรวจประเมิณ วินิจฉัย และให้การรักษาโดยไม่ใช้การผ่าตัด ซึ่งใช้เทคนิคและเครื่องมือที่ทันสมัย รักษาอย่างตรงจุด แม่นยำ อาการปวดหายอย่างถาวร เน้นกระบวนการซ่อมแซมตามธรรมชาติ ทำให้มั่นใจว่าปลอดภัยและได้ผลการรักษาที่สมบูรณ์
         </p>
       </div>
     </div>
