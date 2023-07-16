@@ -1,3 +1,4 @@
+import Link from 'next/link'
 export const RecommendPackage = () => {
 
   return (<div className="py-7 ">
@@ -16,7 +17,9 @@ export const RecommendPackage = () => {
           <p className="text-xs">60 นาที /ครั้ง</p>
         </div>
       </div>
-      <button className="bg-babyblue h-fit px-6 py-2 text-sm font-bold rounded-lg">จอง</button>
+      <Link href="/summary/therapist/1234/buy">
+        <button className="bg-babyblue h-fit px-6 py-2 text-sm font-bold rounded-lg">จอง</button>
+      </Link>
     </div>
 
   </div>)

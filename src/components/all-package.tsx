@@ -1,5 +1,6 @@
 import { Menu, Transition } from '@headlessui/react'
 import { Fragment } from 'react'
+import Link from 'next/link'
 
 const SortOptions = () => {
   return (<Menu >
@@ -74,7 +75,9 @@ export const AllPackage = () => {
 
         </div>
       </div>
-      <button className="bg-babyblue h-fit px-6 py-2 text-sm font-bold rounded-lg">จอง</button>
+      <Link href="/summary/therapist/1234/buy">
+        <button className="bg-babyblue h-fit px-6 py-2 text-sm font-bold rounded-lg">จอง</button>
+      </Link>
     </div>
 
   </div>)

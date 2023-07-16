@@ -4,10 +4,10 @@ import { useState } from "react";
 
 export default function ImageGallery() {
   const [viewImage, setViewImage] = useState(0);
-  const images = ["https://static.hd.co.th/system/image_attachments/images/000/204/317/original/HORIZONTAL-LASIK.png", "https://static.hd.co.th/system/image_attachments/images/000/204/317/original/HORIZONTAL-LASIK.png", "https://static.hd.co.th/system/image_attachments/images/000/204/317/original/HORIZONTAL-LASIK.png"]
+  const images = ["/assets/products/paolo.avif", "/assets/products/cover-2.avif", "/assets/products/cover-3.avif"]
   return (
     <div>
-      <img src={images[viewImage]} className="w-full bg-[#7D9ED3] bg-opacity-3 h-[375px]" />
+      <img src={images[viewImage]} className="w-full bg-[#7D9ED3] bg-opacity-3 h-[375px] object-contain" />
       <div className="flex">
         {
           images.map((image, index) =>
