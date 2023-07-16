@@ -10,6 +10,7 @@ import ImageGallery from '@/components/image-gallery'
 import TherapistImageCarousel from '@/components/therapist-image-carousel'
 import { RecommendPackage } from '@/components/recommend-package'
 import { AllPackage } from '@/components/all-package'
+import Booking from '@/components/booking'
 
 
 export default function Home() {
@@ -23,7 +24,7 @@ export default function Home() {
       <TherapistImageCarousel />
       <Footer />
       <RecommendPackage />
-      <AllPackage />
+      <Booking />
     </>
   )
 }
