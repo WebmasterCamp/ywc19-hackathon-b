@@ -88,7 +88,7 @@ export const AllPackage = () => {
         } else {
           return b.time - a.time
         }
-      }).map((item) => (<div className="flex mt-4 justify-between shadow-shadow-primary items-center p-5">
+      }).map((item) => (<div key={item.time} className="flex mt-4 justify-between shadow-shadow-primary items-center p-5">
         <div>
           <p className="text-lg font-bold max-w-[50%]">
             {
