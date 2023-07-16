@@ -6,7 +6,12 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useEffect, useRef, useState } from 'react';
 import { exportAsImage } from '@/utils/export-image';
 
-export function OfficeSyndromeCarousel() {
+export function OfficeSyndromeCarousel({
+  type, path
+}: {
+  type: "kobkab" | "pain",
+  path: string[]
+}) {
   const [isShareSupported, setIsShareSupported] = useState(false);
   const cardRef = useRef(null)
 
@@ -27,7 +32,6 @@ export function OfficeSyndromeCarousel() {
     }
   };
 
-
   const {
     carouselFragment,
     slideToPrevItem,
@@ -38,14 +42,15 @@ export function OfficeSyndromeCarousel() {
       {
         id: 'item-1',
         renderItem: (
-          <div className='text-center max-w-xl mx-auto'>
+          <div className='text-center max-w-xl mx-auto'><>
             <Image className='flex m-auto' src="/sample.png" alt="Office Syndrome 1" width={300} height={200} />
             <div className='px-5 '>
-              <h1 className=' text-[#3e3e6b] text-xl font-bold mt-[25px]'>Lorem Ipsum is simply dumsdsdsdmy </h1>
-              <p className='font-semibold text-sm mt-[5px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quia nemo ipsam eius, impedit ea officiis, adipisci distinctio quos numquam odio aliquam vel. Perferendis doloribus omnis eaque quis, commodi similique.</p>
-              <p className='font-semibold text-sm mt-[10px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p className='font-semibold text-sm mt-[10px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h1 className=' text-[#3e3e6b] text-xl font-bold mt-[25px]'>มนุษย์กร๊อบแกร๊บ</h1>
+              <p className='font-semibold text-sm mt-[5px]'>ตอนนี้ร่างกายของคุณอยู่ใน <span className='text-[#F29727]'>เกณฑ์เกินมาตราฐาน</span> <br /> คุณอาจจะมีอาการปวดล้าบริเวณต่าง ๆ เช่น แขน คอ ไหล่ หลัง ขา เข่า ตา ข้อมือ</p>
+              <p className='font-semibold text-sm mt-[10px]'>เราแนะนำว่าคุณควรที่จะมาดูแลสุขภาพบ้างแล้ว ทั้งเริ่มวางแผนออกกำลังกายและรับประทานอาหารที่ถูกต้อง</p>
+              <p className='font-semibold text-sm mt-[10px]'>รวมถึงหากอาการปวดในบริเวณต่าง ๆ ยังไม่หาย เรามีคอร์สกายภาพมาแนะนำได้นะ</p>
             </div>
+          </>
           </div>
 
         )
@@ -56,11 +61,11 @@ export function OfficeSyndromeCarousel() {
           <div className='text-center max-w-xl mx-auto'>
             <Image className='flex m-auto' src="/sample.png" alt="Office Syndrome 1" width={300} height={200} />
             <div className='px-5 '>
-              <h1 className=' text-[#3e3e6b] text-xl font-bold mt-[25px]'>Lorem Ipsum is simply dumsdsdsdmy </h1>
-              <p className='font-semibold text-sm mt-[5px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quia nemo ipsam eius, impedit ea officiis, adipisci distinctio quos numquam odio aliquam vel. Perferendis doloribus omnis eaque quis, commodi similique.</p>
-              <p className='font-semibold text-sm mt-[10px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <p className='font-semibold text-sm mt-[10px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div >
+              <h1 className=' text-[#3e3e6b] text-xl font-bold mt-[25px]'>มนุษย์กร๊อบแกร๊บ</h1>
+              <p className='font-semibold text-sm mt-[5px]'>ตอนนี้ร่างกายของคุณอยู่ใน <span className='text-[#F29727]'>เกณฑ์เกินมาตราฐาน</span> <br /> คุณอาจจะมีอาการปวดล้าบริเวณต่าง ๆ เช่น แขน คอ ไหล่ หลัง ขา เข่า ตา ข้อมือ</p>
+              <p className='font-semibold text-sm mt-[10px]'>เราแนะนำว่าคุณควรที่จะมาดูแลสุขภาพบ้างแล้ว ทั้งเริ่มวางแผนออกกำลังกายและรับประทานอาหารที่ถูกต้อง</p>
+              <p className='font-semibold text-sm mt-[10px]'>รวมถึงหากอาการปวดในบริเวณต่าง ๆ ยังไม่หาย เรามีคอร์สกายภาพมาแนะนำได้นะ</p>
+            </div>
 
           </div >
         )

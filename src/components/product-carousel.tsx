@@ -1,8 +1,8 @@
 import { useSpringCarousel } from "react-spring-carousel";
 
-const VideoItem = () => <div className="pr-5 text-primary font-medium">
+const VideoItem = ({ v }: any) => <div className="pr-5 text-primary font-medium">
   <div className="bg-primary w-[141px] h-[79px]"></div>
-  <p className="text-sm line-clamp-2">Lorem Ipsum is simply dummy text of the </p>
+  <p className="text-sm line-clamp-2">{v}</p>
 </div>
 
 export const ProductCarousel = () => {
@@ -10,10 +10,10 @@ export const ProductCarousel = () => {
     slideType: 'fluid',
     freeScroll: true,
     enableFreeScrollDrag: true,
-    items: Array.from({ length: 16 }).map((_, i) => ({
+    items: ["เก้าอี้นวดเพื่อสุขภาพ", "ที่วางเท้าเพื่อสุขภาพ", "เก้าอี้นวดเพื่อสุขภาพ"].map((v, i) => ({
       id: `item-${i}`,
       renderItem: (
-        <VideoItem />
+        <VideoItem v={v} />
       )
     }))
   })
