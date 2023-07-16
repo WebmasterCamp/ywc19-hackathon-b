@@ -16,10 +16,10 @@ export function OfficeSyndromeCarousel() {
 
 
   const handleShare = async () => {
-    const image = exportAsImage(cardRef.current, "test.png")
+    const image = await exportAsImage(cardRef.current, "test.png")
     try {
       await navigator.share({
-        url: 'https://example.com', // Replace with the URL you want to share
+        files: [new File([image], "backpack.png")]
       });
       toast.success('Successfully shared');
     } catch (error) {
