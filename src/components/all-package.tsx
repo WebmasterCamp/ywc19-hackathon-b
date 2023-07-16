@@ -55,7 +55,7 @@ const SortOptions = () => {
   </Menu>)
 }
 export const AllPackage = () => {
-  return (<div className="py-7 ">
+  return (<div className="py-7 max-w-3xl mx-auto">
     <div className="flex justify-between px-5">
       <h1 className="font-bold text-xl">แพ็คเกจแนะนำ</h1>
       <SortOptions />

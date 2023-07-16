@@ -3,10 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { exportAsImage } from '@/utils/export-image';
 
 export function OfficeSyndromeCarousel() {
   const [isShareSupported, setIsShareSupported] = useState(false);
+  const cardRef = useRef(null)
 
   useEffect(() => {
     setIsShareSupported(!!navigator.share);
@@ -14,6 +16,7 @@ export function OfficeSyndromeCarousel() {
 
 
   const handleShare = async () => {
+    const image = exportAsImage(cardRef.current, "test.png")
     try {
       await navigator.share({
         url: 'https://example.com', // Replace with the URL you want to share
@@ -35,9 +38,9 @@ export function OfficeSyndromeCarousel() {
       {
         id: 'item-1',
         renderItem: (
-          <div className='text-center'>
+          <div className='text-center max-w-xl mx-auto'>
             <Image className='flex m-auto' src="/sample.png" alt="Office Syndrome 1" width={300} height={200} />
-            <div className='px-5'>
+            <div className='px-5 '>
               <h1 className=' text-[#3e3e6b] text-xl font-bold mt-[25px]'>Lorem Ipsum is simply dumsdsdsdmy </h1>
               <p className='font-semibold text-sm mt-[5px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quia nemo ipsam eius, impedit ea officiis, adipisci distinctio quos numquam odio aliquam vel. Perferendis doloribus omnis eaque quis, commodi similique.</p>
               <p className='font-semibold text-sm mt-[10px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -50,23 +53,24 @@ export function OfficeSyndromeCarousel() {
       {
         id: 'item-2',
         renderItem: (
-          <div className='text-center'>
+          <div className='text-center max-w-xl mx-auto'>
             <Image className='flex m-auto' src="/sample.png" alt="Office Syndrome 1" width={300} height={200} />
-            <div className='px-5'>
+            <div className='px-5 '>
               <h1 className=' text-[#3e3e6b] text-xl font-bold mt-[25px]'>Lorem Ipsum is simply dumsdsdsdmy </h1>
               <p className='font-semibold text-sm mt-[5px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quia nemo ipsam eius, impedit ea officiis, adipisci distinctio quos numquam odio aliquam vel. Perferendis doloribus omnis eaque quis, commodi similique.</p>
               <p className='font-semibold text-sm mt-[10px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <p className='font-semibold text-sm mt-[10px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
+            </div >
 
-          </div>
+          </div >
         )
       },
     ]
   })
 
+
   return (
-    <div className='overflow-hidden mt-[30px]'>
+    <div ref={cardRef} className='overflow-hidden mt-[30px]'>
       {carouselFragment}
       <div className="carousel-button flex justify-center items-center mt-[45px] mb-[30px]">
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="10" viewBox="0 0 25 10" fill="none">

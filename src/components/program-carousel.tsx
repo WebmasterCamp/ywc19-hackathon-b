@@ -18,7 +18,7 @@ export const ProgramCarousel = () => {
     }))
   })
   return (<div className="py-7">
-    <div className="w-full shadow-shadow-primary shadow-x-none px-6 py-5 overflow-hidden">
+    <div className="w-full lg:!px-20 shadow-shadow-primary shadow-x-none px-6 py-5 overflow-hidden">
       <h1 className="font-bold text-xl">โปรแกรมนำเสนอ</h1>
       <h2 className="text-sm font-medium mb-4 text-secondary"></h2>
       {carouselFragment}

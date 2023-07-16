@@ -37,7 +37,7 @@ const TherapistImageCarousel: React.FC = () => {
       <div className="flex items-center justify-center pl-[22px] mt-[30px]">
         <h1 className="font-[#3E3E6B] text-[20px] font-bold">นักกายภาพบำบัด ทำอะไร?</h1>
       </div>
-      <div className="pl-[22px] pr-[22px]">
+      <div className="pl-[22px] pr-[22px] max-w-xl mx-auto">
         <p>
           Lorem Ipsum is simply dummy text of the.Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the
         </p>
