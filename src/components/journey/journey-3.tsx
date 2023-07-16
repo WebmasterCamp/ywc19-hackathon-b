@@ -10,8 +10,9 @@ export const Journey3 = ({
       onClick={onClick}
       className={`flex flex-1 w-screen h-screen justify-center items-center ${
         fade && "opacity-0"
-      } transition-opacity duration-[3000ms]`}
+      } transition-opacity duration-[3000ms] relative`}
     >
+      <div className="absolute bottom-5 m-auto">แตะเพื่อไปต่อ</div>
       <svg
         width="390"
         height="844"
