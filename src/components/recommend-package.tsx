@@ -1,7 +1,7 @@
 import Link from 'next/link'
 export const RecommendPackage = () => {
 
-  return (<div className="py-7 ">
+  return (<div className="py-7 max-w-3xl mx-auto">
     <h1 className="font-bold text-xl px-5">แพ็คเกจทั้งหมด</h1>
     <div className="flex mt-4 justify-between shadow-shadow-primary items-center p-5">
       <div>

@@ -15,7 +15,7 @@ export default function ImageGallery() {
           )
         }
       </div>
-      <div className="flex text-primary items-center pl-[22px] mt-[30px]">
+      <div className="flex text-primary max-w-3xl mx-auto items-center pl-[22px] mt-[30px]">
         <h1 className="text-xl font-bold">Porgee physio</h1>
         <div className="flex ml-[17px] items-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
@@ -25,7 +25,7 @@ export default function ImageGallery() {
           <h3>จตุจักร</h3>
         </div>
       </div>
-      <div className="pl-[22px] pr-[22px]">
+      <div className="pl-[22px] pr-[22px] max-w-3xl mx-auto">
         <p>
           Lorem Ipsum is simply dummy text of the.Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the
         </p>
