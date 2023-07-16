@@ -160,7 +160,7 @@ export default function Page() {
               router.push("/summary");
             }, 3000);
           }}
-          fade={isFadeJourney6}
+          fade={isFadeJourney7}
         />
       )}
     </div>
