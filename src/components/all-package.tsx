@@ -62,7 +62,7 @@ export const AllPackage = () => {
     </div>
     <div className="flex mt-4 justify-between shadow-shadow-primary items-center p-5">
       <div>
-        <p className="text-lg font-bold max-w-[50%]">
+        <p className="text-lg font-bold max-w-[80%]">
           โปรแกรมกายภาพบำบัด
           รักษาอาการแก้ปวดหลัง
         </p>
