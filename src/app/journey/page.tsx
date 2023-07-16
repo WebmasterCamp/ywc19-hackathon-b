@@ -6,7 +6,7 @@ import { Journey4 } from "@/components/journey/journey-4";
 import { Journey5 } from "@/components/journey/journey-5";
 import { Journey6 } from "@/components/journey/journey-6";
 import { Journey7 } from "@/components/journey/journey-7";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 
 export default function Page() {
