@@ -46,7 +46,7 @@ export const ShopBox = () => {
       </div>
       {
         isExpanded && [1, 2, 3].map((item, index) => (
-          <div className={clsx("flex justify-between items-center p-5", index % 2 == 0 && "bg-primary-mid-emp bg-opacity-50")}>
+          <div key={`program-${item}`} className={clsx("flex justify-between items-center p-5", index % 2 == 0 && "bg-primary-mid-emp bg-opacity-50")}>
             <div>
               <p>
                 โปรแกรมกายภาพบำบัด
