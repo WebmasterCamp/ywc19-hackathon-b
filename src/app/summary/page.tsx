@@ -10,20 +10,17 @@ import ImageGallery from '@/components/image-gallery'
 import TherapistImageCarousel from '@/components/therapist-image-carousel'
 import { RecommendPackage } from '@/components/recommend-package'
 import { AllPackage } from '@/components/all-package'
+import { ProductCarousel } from '@/components/product-carousel'
 
 
-export default function Home() {
+export default function Summary() {
   return (
     <>
       <OfficeSyndromeCarousel />
       <VideoCarousel />
+      <ProductCarousel />
       <KnowledgeBox />
-      <ShopBox />
-      <ImageGallery />
-      <TherapistImageCarousel />
       <Footer />
-      <RecommendPackage />
-      <AllPackage />
     </>
   )
 }

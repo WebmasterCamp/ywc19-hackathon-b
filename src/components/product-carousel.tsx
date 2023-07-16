@@ -5,7 +5,7 @@ const VideoItem = () => <div className="pr-5 text-primary font-medium">
   <p className="text-sm line-clamp-2">Lorem Ipsum is simply dummy text of the </p>
 </div>
 
-export const VideoCarousel = () => {
+export const ProductCarousel = () => {
   const { carouselFragment } = useSpringCarousel({
     slideType: 'fluid',
     freeScroll: true,
@@ -19,8 +19,8 @@ export const VideoCarousel = () => {
   })
   return (<div className="py-3">
     <div className="w-full shadow-shadow-primary shadow-x-none px-6 py-5 overflow-hidden">
-      <h1 className="font-bold text-xl">ท่าสำหรับยืดตัว</h1>
-      <h2 className="text-sm font-medium mb-4 text-secondary">ยืดๆ ยาดๆ บิดนิดนึง</h2>
+      <h1 className="font-bold text-xl">สินค้าแนะนำ</h1>
+      <h2 className="text-sm font-medium mb-4 text-secondary">ซื้อเถอะขอแล้ว ขอเงินเข้าบ.หน่อย</h2>
       {carouselFragment}
     </div>
   </div>)
