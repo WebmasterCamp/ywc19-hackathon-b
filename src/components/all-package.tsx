@@ -55,8 +55,8 @@ const SortOptions = () => {
 }
 export const AllPackage = () => {
   return (<div className="py-7 ">
-    <div className="flex justify-between">
-      <h1 className="font-bold text-xl px-5">แพ็คเกจแนะนำ</h1>
+    <div className="flex justify-between px-5">
+      <h1 className="font-bold text-xl">แพ็คเกจแนะนำ</h1>
       <SortOptions />
     </div>
     <div className="flex mt-4 justify-between shadow-shadow-primary items-center p-5">

@@ -7,22 +7,23 @@ export const ShopBox = () => {
       <div className="rounded-t-2xl bg-gray-100 z-20 h-[149px] ">
       </div>
     </div>
-    <div>
-      <div className="rounded-b-2xl z-10">
-        <div className="p-5">        <div className="flex justify-between items-center">
-          <h1 className="font-bold text-xl">Porgee physio</h1>
-          {
-            isExpanded ?
-              <svg className="cursor-pointer" onClick={() => setIsExpanded(false)} width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.00473 9.79938L7.52034 1.72031C8.28982 0.766188 9.54982 0.765503 10.3203 1.71879L16.8447 9.79077" stroke="#3E3E6B" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-              :
-              <svg className="cursor-pointer" onClick={() => setIsExpanded(true)} width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16.9201 1L10.4001 7.66914C9.63008 8.45675 8.37008 8.45675 7.60008 7.66914L1.08008 1" stroke="#3E3E6B" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+    <div className="rounded-b-2xl z-10">
+      <div >
+        <div className="p-5">
+          <div className="flex justify-between items-center">
+            <h1 className="font-bold text-xl">Porgee physio</h1>
+            {
+              isExpanded ?
+                <svg className="cursor-pointer" onClick={() => setIsExpanded(false)} width="18" height="11" viewBox="0 0 18 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.00473 9.79938L7.52034 1.72031C8.28982 0.766188 9.54982 0.765503 10.3203 1.71879L16.8447 9.79077" stroke="#3E3E6B" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                :
+                <svg className="cursor-pointer" onClick={() => setIsExpanded(true)} width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.9201 1L10.4001 7.66914C9.63008 8.45675 8.37008 8.45675 7.60008 7.66914L1.08008 1" stroke="#3E3E6B" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
 
-          }
-        </div>
+            }
+          </div>
           <div className="flex items-center gap-2">
             <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8.50004 9.51288C8.79026 9.51288 9.07764 9.45572 9.34577 9.34465C9.6139 9.23359 9.85753 9.0708 10.0627 8.86559C10.268 8.66037 10.4307 8.41674 10.5418 8.14861C10.6529 7.88048 10.71 7.5931 10.71 7.30288C10.71 7.01266 10.6529 6.72528 10.5418 6.45715C10.4307 6.18902 10.268 5.94539 10.0627 5.74017C9.85753 5.53496 9.6139 5.37217 9.34577 5.26111C9.07764 5.15004 8.79026 5.09288 8.50004 5.09288C7.91391 5.09288 7.35179 5.32572 6.93733 5.74017C6.52288 6.15463 6.29004 6.71675 6.29004 7.30288C6.29004 7.88901 6.52288 8.45113 6.93733 8.86559C7.35179 9.28004 7.91391 9.51288 8.50004 9.51288Z" stroke="#3E3E6B" stroke-width="1.0625" />
@@ -41,28 +42,29 @@ export const ShopBox = () => {
         </div>
 
 
-        {
-          isExpanded && [1, 2, 3].map((item, index) => (
-            <div className={clsx("flex justify-between items-center p-5", index % 2 == 0 && "bg-primary-mid-emp bg-opacity-50")}>
-              <div>
-                <p>
-                  โปรแกรมกายภาพบำบัด
-                  รักษาอาการแก้ปวดหลัง
-                </p>
-                <div className="flex items-center gap-2">
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 4V6.5M10.375 6.625C10.375 9.04 8.415 11 6 11C3.585 11 1.625 9.04 1.625 6.625C1.625 4.21 3.585 2.25 6 2.25C8.415 2.25 10.375 4.21 10.375 6.625Z" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M4.5 0.999939H7.5" stroke="black" stroke-width="0.75" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                  <p className="text-xs">60 นาที /ครั้ง</p>
 
-                </div>
-              </div>
-              <button className="bg-babyblue h-fit px-6 py-2 text-sm font-bold rounded-lg">จอง</button>
-            </div>
-          ))
-        }
       </div>
+      {
+        isExpanded && [1, 2, 3].map((item, index) => (
+          <div className={clsx("flex justify-between items-center p-5", index % 2 == 0 && "bg-primary-mid-emp bg-opacity-50")}>
+            <div>
+              <p>
+                โปรแกรมกายภาพบำบัด
+                รักษาอาการแก้ปวดหลัง
+              </p>
+              <div className="flex items-center gap-2">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 4V6.5M10.375 6.625C10.375 9.04 8.415 11 6 11C3.585 11 1.625 9.04 1.625 6.625C1.625 4.21 3.585 2.25 6 2.25C8.415 2.25 10.375 4.21 10.375 6.625Z" stroke="black" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M4.5 0.999939H7.5" stroke="black" stroke-width="0.75" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <p className="text-xs">60 นาที /ครั้ง</p>
+
+              </div>
+            </div>
+            <button className="bg-babyblue h-fit px-6 py-2 text-sm font-bold rounded-lg">จอง</button>
+          </div>
+        ))
+      }
     </div>
 
   </div>)
