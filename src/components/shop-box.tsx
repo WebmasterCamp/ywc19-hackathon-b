@@ -1,5 +1,7 @@
 import { useState } from "react"
 import clsx from "clsx"
+import Link from "next/link"
+
 export const ShopBox = () => {
   const [isExpanded, setIsExpanded] = useState(false)
   return (<div className="rounded-2xl max-w-[320px] mx-auto shadow-shadow-primary">
@@ -37,8 +39,9 @@ export const ShopBox = () => {
           <p className="text-sm line-clamp-3">
             Lorem Ipsum is simply dummy text of the.Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lor
           </p>
-
-          <button onClick={() => setIsExpanded(e => !e)} className="rounded-lg w-full mt-2 bg-primary shadow-shadow-primary text-sm px-3 py-1 text-white">กดเพื่อดูรายละเอียดเพิ่มเติม</button>
+          <Link href="/summary/therapist/1234">
+             <button className="rounded-lg w-full mt-2 bg-primary shadow-shadow-primary text-sm px-3 py-1 text-white">กดเพื่อดูรายละเอียดเพิ่มเติม</button>
+          </Link>
         </div>
 
 
@@ -61,7 +64,9 @@ export const ShopBox = () => {
 
               </div>
             </div>
-            <button className="bg-babyblue h-fit px-6 py-2 text-sm font-bold rounded-lg">จอง</button>
+            <Link href="/summary/therapist/1234/buy">
+              <button className="bg-babyblue h-fit px-6 py-2 text-sm font-bold rounded-lg">จอง</button>
+            </Link>
           </div>
         ))
       }
