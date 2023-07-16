@@ -1,20 +1,48 @@
-import clsx from "clsx";
-import Image from "next/image";
-import { useState } from "react";
+
+import { Carousel } from 'antd';
+import React, { useEffect, useState } from 'react'
 
 export default function ImageGallery() {
-  const [viewImage, setViewImage] = useState(0);
-  const images = ["/assets/products/paolo.avif", "/assets/products/cover-2.avif", "/assets/products/cover-3.avif"]
+
+  const [screenWidth, setScreenWidth] = useState<number>(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    setScreenWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const contentStyle: React.CSSProperties = {
+    height: '450px',
+    lineHeight: '160px',
+    textAlign: 'center',
+    background: '#364d79',
+    width: '100%',
+    objectFit: 'cover'
+  };
+
+  const onChange = (currentSlide: number) => {
+    console.log(currentSlide);
+  }
+
   return (
     <div>
-      <img src={images[viewImage]} className="w-full bg-[#7D9ED3] bg-opacity-3 h-[375px] object-contain" />
-      <div className="flex">
-        {
-          images.map((image, index) =>
-            <Image key={index} onClick={() => setViewImage(index)} className={clsx("w-1/3 h-[130px] bg-[#89abe3]", index === viewImage && "opacity-30")} src={image} alt="" width={130} height={130} />
-          )
-        }
-      </div>
+      <Carousel afterChange={onChange} slidesToShow={screenWidth >= 768 ? 2 : 1}>
+        <div className="">
+          <img src='/assets/products/paolo.avif' alt='palo' style={contentStyle} />
+        </div>
+        <div className="">
+          <img src='/assets/products/cover-2.avif' alt='palo' style={contentStyle}/>
+        </div>
+        <div className="">
+          <img src='/assets/products/cover-3.avif' alt='palo' style={contentStyle}/>
+        </div>
+      </Carousel>
       <div className="flex text-primary max-w-3xl mx-auto items-center pl-[22px] mt-[30px]">
         <h1 className="text-xl font-bold">Porgee physio</h1>
         <div className="flex ml-[17px] items-center">
