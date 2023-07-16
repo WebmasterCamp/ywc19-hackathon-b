@@ -37,7 +37,7 @@ export default function Page() {
   }, []);
 
   return (
-    <div className={"h-screen w-screen flex"}>
+    <div className={"h-screen w-screen flex relative"}>
       {isShowJourney && <Journey1 fade={isFadeJourney} />}
 
       {isShowForm && (
