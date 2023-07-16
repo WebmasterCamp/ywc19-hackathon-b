@@ -11,7 +11,6 @@ import TherapistImageCarousel from '@/components/therapist-image-carousel'
 import { RecommendPackage } from '@/components/recommend-package'
 import { AllPackage } from '@/components/all-package'
 import { ProductCarousel } from '@/components/product-carousel'
-import { ProgramCarousel } from '@/components/program-carousel'
 
 
 export default function Summary() {

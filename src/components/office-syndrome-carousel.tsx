@@ -1,3 +1,4 @@
+'use client'
 import { useSpringCarousel } from 'react-spring-carousel'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -5,20 +6,15 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useEffect, useRef, useState } from 'react';
 import { exportAsImage } from '@/utils/export-image';
+import { useRouter } from 'next/navigation';
 
-export function OfficeSyndromeCarousel({ 
-  type, path
-}: {
-  type: "kobkab" | "pain",
-  path: string[]
-}) {
+export function OfficeSyndromeCarousel() {
   const [isShareSupported, setIsShareSupported] = useState(false);
   const cardRef = useRef(null)
-
   useEffect(() => {
     setIsShareSupported(!!navigator.share);
   }, []);
-
+  const router = useRouter()
 
   const handleShare = async () => {
     const image = await exportAsImage(cardRef.current, "test.png")
@@ -84,7 +80,8 @@ export function OfficeSyndromeCarousel({
           <circle className="carousel-bullet" cx="19.2858" cy="5" r="5" onClick={slideToNextItem} />
         </svg>
       </div>
-      <div className="flex item-center justify-center py-4">
+      <div onClick={() => router.replace('/journey')} className="flex item-center justify-center py-4">
+
         <button className='btn-primary w-[45px] mr-[12px]'>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" fill="none">
             <path d="M10.1133 3.42812C9.42746 3.22315 8.67064 3.08913 7.83499 3.08913C4.0588 3.08913 1 6.14792 1 9.92412C1 13.7082 4.0588 16.767 7.83499 16.767C11.6112 16.767 14.67 13.7082 14.67 9.932C14.67 8.52874 14.2443 7.22008 13.519 6.13216M8.81254 1L11.0909 3.61732L8.43414 5.55666" stroke="white" stroke-width="1.18252" stroke-linecap="round" stroke-linejoin="round" />

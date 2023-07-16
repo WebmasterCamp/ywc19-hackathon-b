@@ -38,8 +38,12 @@ const TherapistImageCarousel: React.FC = () => {
         <h1 className="font-[#3E3E6B] text-[20px] font-bold">นักกายภาพบำบัด ทำอะไร?</h1>
       </div>
       <div className="pl-[22px] pr-[22px] max-w-xl mx-auto">
-        <p>
-          Lorem Ipsum is simply dummy text of the.Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the Lorem Ipsum is simply dummy text of the
+        <p className='text-center'>
+          นักกายภาพบำบัด มีหน้าที่บำบัดรักษาผู้อื่นตามคำสั่งแพทย์<br />
+          โดยใช้เครื่องมือทางฟิสิกส์ การบริหารร่างกายเฉพาะท่า เช่น การดึง การนวด และเทคนิคอื่น ๆ โดยนักกายภาพบำบัด<br />
+          มีความชำนาญในการให้บริการทั้งในผู้ป่วยระบบประสาท<br />
+          และกระดูกกล้ามเนื้อ โดยการตรวจประเมินผู้ป่วยแต่ละราย เพื่อวิเคราะห์ปัญหาของผู้ป่วย โดยใช้หลักการของ<br />
+          การเคลื่อนไหว กายวิภาคศาสตร์ สรีรวิทยา และทฤษฎีต่าง ๆ ที่ผสมผสาน เพื่อใช้ในการรักษาผู้ป่วย<br />
         </p>
       </div>
     </div>
