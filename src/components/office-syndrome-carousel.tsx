@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useEffect, useRef, useState } from 'react';
-import { exportAsImage } from '@/utils/export-image';
 
 export function OfficeSyndromeCarousel({
   type, path
@@ -21,7 +20,10 @@ export function OfficeSyndromeCarousel({
 
 
   const handleShare = async () => {
+<<<<<<< Updated upstream
     const image = await exportAsImage(cardRef.current, "test.png")
+=======
+>>>>>>> Stashed changes
     try {
       await navigator.share({
         files: [new File([image], "backpack.png")]

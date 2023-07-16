@@ -1,12 +1,22 @@
 import { useState } from "react"
 import clsx from "clsx"
 import Link from "next/link"
+import Image from "next/image"
 
 export const ShopBox = () => {
   const [isExpanded, setIsExpanded] = useState(false)
+
+  const imageStyle = {
+    backgroundImage: `url(/assets/products/wellness.avif)`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'center',
+    // Additional background properties can be added here
+  };
+
   return (<div className="rounded-2xl max-w-[320px] mx-auto shadow-shadow-primary">
     <div>
-      <div className="rounded-t-2xl bg-gray-100 z-20 h-[149px] ">
+      <div className="rounded-t-2xl z-20 h-[149px]" style={imageStyle}>
       </div>
     </div>
     <div className="rounded-b-2xl z-10">
