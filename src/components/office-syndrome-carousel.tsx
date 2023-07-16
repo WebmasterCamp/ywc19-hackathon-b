@@ -40,7 +40,7 @@ export function OfficeSyndromeCarousel() {
         id: 'item-1',
         renderItem: (
           <div className='text-center max-w-xl mx-auto'><>
-            <Image className='flex m-auto' src="/sample.png" alt="Office Syndrome 1" width={300} height={200} />
+            <Image className='flex m-auto' src="/assets/products/IMG_0506.PNG" alt="Office Syndrome 1" width={300} height={200} />
             <div className='px-5 '>
               <h1 className=' text-[#3e3e6b] text-xl font-bold mt-[25px]'>มนุษย์กร๊อบแกร๊บ</h1>
               <p className='font-semibold text-sm mt-[5px]'>ตอนนี้ร่างกายของคุณอยู่ใน <span className='text-[#F29727]'>เกณฑ์เกินมาตราฐาน</span> <br /> คุณอาจจะมีอาการปวดล้าบริเวณต่าง ๆ เช่น แขน คอ ไหล่ หลัง ขา เข่า ตา ข้อมือ</p>
