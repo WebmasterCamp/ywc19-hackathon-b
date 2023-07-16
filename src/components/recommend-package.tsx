@@ -17,7 +17,7 @@ export const RecommendPackage = () => {
           <p className="text-xs">60 นาที /ครั้ง</p>
         </div>
       </div>
-      <Link href="/summary/therapis/1234/buy">
+      <Link href="/summary/therapist/1234/buy">
         <button className="bg-babyblue h-fit px-6 py-2 text-sm font-bold rounded-lg">จอง</button>
       </Link>
     </div>

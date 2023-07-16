@@ -1,17 +1,24 @@
 import { DatePicker, Modal } from "antd";
 import { useState } from "react";
-
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Booking () {
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [countdown, setCountdown] = useState(60); 
 
     const showModal = () => {
       setIsModalOpen(true);
     };
   
     const handleOk = () => {
-      setIsModalOpen(false);
+
+        toast.success('จองสำเร็จ', {
+            autoClose: 3000,
+            onClose: () => {
+              window.location.href = '/summary';
+            },
+          });
+          setIsModalOpen(false);
     };
   
     const handleCancel = () => {
@@ -29,10 +36,11 @@ export default function Booking () {
             <div className="text-center">
             <DatePicker className="w-[250px] mx-aut mb-[10px]" />
             <button className="btn-primary w-[250px] mx-auto" onClick={showModal}>จอง</button>
-            <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} okText="ยืนยันการชำระเงิน" cancelText='ยกเลิก'>
+            <Modal title="ชำระเงิน" open={isModalOpen} onOk={handleOk} onCancel={handleCancel} okText="ยืนยันการชำระเงิน" cancelText='ยกเลิก'>
                 <img src="/assets/products/qr.png" alt="" />
             </Modal>
             </div>
+            <ToastContainer />
         </div>
     )
 }
